@@ -2,10 +2,19 @@
     --basic-white: #ffffff;
     --basic-light-gray: #F2F2F2;
     --basic-gray: #888888;
+    --basic-very-light-gray: #EEEEEE;
+    --basic-dark-gray: #333333;
     --basic-black: #000000;
     --basic-blue: #81B3D2;
+    --basic-dark-blue: #669EC0;
+    ;
+    --basic-very-dark-blue: #5496BD;
     --basic-opacity-black: rgba(0, 0, 0, 0.3);
+    --basic-opacity-white: rgba(255, 255, 255, 0.9);
+    --basic-big-opacity-white: rgba(255, 255, 255, 0.3);
     --basic-brown: #766357;
+    --basic-dark-brown: #604E43;
+    --basic-very-dark-brown: #503E33;
 }
 
 .page-body {
@@ -35,6 +44,10 @@ img {
     height: auto;
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* Main navigation */
 
@@ -46,18 +59,28 @@ img {
 
 .site-navigation {
     list-style: none;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
-.site-navigation a {
+.site-navigation__link {
     color: var(--basic-black);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation__link--current {
+    color: var(--basic-brown);
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:focus {
     color: var(--basic-blue);
 }
 
-.site-navigation a:active {
+.site-navigation__link:active {
     color: var(--basic-opacity-black);
 }
 
@@ -82,5 +105,157 @@ img {
     text-transform: uppercase;
 }
 
+.reasons-list,
+.city-useful-list {
+    list-style: none;
+}
+
+.item-header {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.item-content,
+.item-number {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.reasons-list__item--left,
+.reasons-list__item--right {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+
+.reasons-list__item--gray {
+    background-color: var(--basic-very-light-gray)
+}
+
+.city-useful-list {
+    background-color: var(--basic-white);
+}
+
+.city-useful-list__item .item-header {
+    color: var(--basic-black);
+}
+
+.city-useful-list__item .item-content {
+    color: var(--basic-dark-gray);
+}
+
+.interesting__header {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.interesting__content {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.interesting__search {
+    background-color: var(--basic-brown);
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    width: 568px;
+    height: 86px;
+    border: 0;
+}
+
+.interesting__search:hover,
+.interesting__search:focus {
+    background-color: var(--basic-dark-brown);
+    outline: none;
+}
+
+.interesting__search:active {
+    background-color: var(--basic-very-dark-brown);
+    outline: none;
+    color: var(--basic-big-opacity-white);
+}
+
+.interesting-form__find {
+    background-color: var(--basic-blue);
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    width: 458px;
+    height: 58px;
+    border: 0;
+}
+
+.interesting-form__find:hover,
+.interesting-form__find:focus {
+    background-color: var(--basic-dark-blue);
+    outline: none;
+}
+
+.interesting-form__find:active {
+    background-color: var(--basic-very-dark-blue);
+    outline: none;
+    color: var(--basic-big-opacity-white);
+}
+
 
 /* Footer */
+
+.main-footer {
+    width: 1200px;
+    height: 120px;
+    background-color: var(--basic-opacity-white);
+}
+
+.main-footer__contacts {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black)
+}
+
+.contacts__link {
+    color: var(--basic-black);
+}
+
+.social__list {
+    list-style: none;
+}
+
+.social__link {
+    background-color: var(--basic-blue);
+}
+
+.developer__content {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
