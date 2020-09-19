@@ -2,9 +2,11 @@
     --basic-white: #ffffff;
     --basic-light-gray: #F2F2F2;
     --basic-gray: #888888;
+    --light-gray:#BDBBBC;
     --basic-very-light-gray: #EEEEEE;
     --basic-dark-gray: #333333;
     --basic-black: #000000;
+    --black:#231F20;
     --basic-blue: #81B3D2;
     --basic-dark-blue: #669EC0;
     ;
@@ -15,6 +17,7 @@
     --basic-brown: #766357;
     --basic-dark-brown: #604E43;
     --basic-very-dark-brown: #503E33;
+
 }
 
 .page-body {
@@ -258,4 +261,18 @@ img {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
+}
+.developer__logo{
+  fill: var(--black);
+}
+.developer__link:hover .developer__logo{
+  fill: var(--basic-blue);
+}
+
+.developer__link:focus .developer__logo{
+  fill: var(--basic-blue);
+}
+
+.developer__link:active .developer__logo{
+  fill: var(--light-gray);
 }
