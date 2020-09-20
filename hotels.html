@@ -29,75 +29,72 @@
         <!-- Фильтр посика. Тут будет форма-->
         <button type="button">Показать</button>
       </section>
-      <section>
-        <h3>Найдено: 3</h3>
-        <p>Сортировка:</p>
-        <a href="blank.html">По цене</a>
-        <a href="blank.html">По типу</a>
-        <a href="blank.html">По рейтингу</a>
-        <a href="blank.html">&#9650;</a>
-        <a href="blank.html">&#9660;</a>
+      <section class="sorting">
+        <h3 class="sorting__result-text">Найдено: <span class="sorting__result-value">3</span></h3>
+        <p class="sotring__name">Сортировка:</p>
+        <a class="sorting__byprice active" href="#">По цене</a>
+        <a class="sorting__bytype" href="#">По типу</a>
+        <a class="sorting__byrating" href="#">По рейтингу</a>
+        <a class="sorting__asc" href="#">&#9650;</a>
+        <a class="sorting__dsc active" href="#">&#9660;</a>
       </section>
-      <section>
-        <h1 class="hidden">Отели Седоны</h1>
-        <ul>
-          <li>
-            <a href="blank.html">
-              <h3>Amara Resort & Spa</h3>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Amara Resort & Spa">
-            </a>
-            <p>
-              Гостиница От 4000 Р.
-            </p>
-            <p>
-              <a href="blank.html">Подробнее</a>
-              <a href="blank.html">Забронировать</a>
-            </p>
-            <p>
-              Рейтинг: 8,5
-            </p>
-          </li>
-          <li>
-            <a href="blank.html">
-              <h3>Desert Quail Inn</h3>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
-            </a>
-            <p>
-              Мотель От 3000 Р.
-            </p>
-            <p>
-              <a href="blank.html">Подробнее</a>
-              <a href="blank.html">Забронировать</a>
-            </p>
-            <p>
-              Рейтинг: 8,9
-            </p>
-          </li>
-          <li>
-            <a href="blank.html">
-              <h3>Villas at Poco Diablo</h3>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
-            </a>
-            <p>
-              Апартаменты От 2000 Р.
-            </p>
-            <p>
-              <a href="blank.html">Подробнее</a>
-              <a href="blank.html">Забронировать</a>
-            </p>
-            <p>
-              Рейтинг: 9,2
-            </p>
-          </li>
-        </ul>
+      <section class="hotels">
+        <h1 class="hotels__header hidden">Отели Седоны</h1>
+        <article class="hotels-item">
+          <a class="hotels-item__link" href="blank.html">
+            <h3 class="hotels-item__name">Amara Resort & Spa</h3>
+            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Amara Resort & Spa">
+          </a>
+          <p class="hotels-item__type">
+            Гостиница От 4000 Р.
+          </p>
+          <p class="hotels-item__buttons">
+            <a class="hotels-item__detail" href="blank.html">Подробнее</a>
+            <a class="hotels-item__reserv" href="blank.html">Забронировать</a>
+          </p>
+          <p class="hotels-item__rating">
+            Рейтинг: 8,5
+          </p>
+        </article>
+        <article class="hotels-item">
+          <a class="hotels-item__link" href="blank.html">
+            <h3 class="hotels-item__name">Desert Quail Inn</h3>
+            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
+          </a>
+          <p class="hotels-item__type">
+            Мотель От 3000 Р.
+          </p>
+          <p class="hotels-item__buttons">
+            <a class="hotels-item__detail" href="blank.html">Подробнее</a>
+            <a class="hotels-item__reserv" href="blank.html">Забронировать</a>
+          </p>
+          <p class="hotels-item__rating">
+            Рейтинг: 8,9
+          </p>
+        </article>
+        <article class="hotels-item">
+          <a class="hotels-item__link" href="blank.html">
+            <h3 class="hotels-item__name">Villas at Poco Diablo</h3>
+            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
+          </a>
+          <p class="hotels-item__type">
+            Апартаменты От 2000 Р.
+          </p>
+          <p class="hotels-item__buttons">
+            <a class="hotels-item__detail" href="blank.html">Подробнее</a>
+            <a class="hotels-item__reserv" href="blank.html">Забронировать</a>
+          </p>
+          <p class="hotels-item__rating">
+            Рейтинг: 9,2
+          </p>
+        </article>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts">
         <h2 class="contacts__header hidden">Контакты.</h2>
         <p class="contacts">
-          <a class="contacts__link" href="#">#visitSEDONA</a><br> ТЕЛ: <a class="contacts__link"
-            href="tel:+74956660166">+7 (495) 666-01-66</a>
+          <a class="contacts__link" href="#">#visitSEDONA</a><br> ТЕЛ: <a class="contacts__link" href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
       <section class="main-footer__social">
