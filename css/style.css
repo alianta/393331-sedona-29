@@ -245,33 +245,29 @@ img {
   opacity: 1;
 }
 
-.sorting .sorting__byprice_active {
-  color: var(--basic-blue);
-  opacity: 1;
-  border-bottom: none;
-}
-
-.sorting .sorting__asc,
-.sorting .sorting__dsc {
+.sorting .sorting__pic-link {
   border-bottom: none;
   color: var(--medium-gray);
   opacity: 1;
 }
 
-.sorting .sorting__asc:hover,
-.sorting .sorting__dsc:hover,
-.sorting .sorting__asc:focus,
-.sorting .sorting__dsc:focus {
+.sorting .sorting__pic-link:hover,
+.sorting .sorting__pic-link:focus {
   border-bottom: none;
   color: var(--basic-black);
 }
 
-.sorting .sorting__asc:active,
-.sorting .sorting__dsc:active,
-.sorting .sorting__dsc_active {
+.sorting .sorting__pic-link:active {
   border-bottom: none;
   color: var(--basic-blue);
   opacity: 1;
+}
+
+.sorting .sorting__text-link_active,
+.sorting .sorting__pic-link_active {
+  color: var(--basic-blue);
+  opacity: 1;
+  border-bottom: none;
 }
 
 .hotels-item__name {
@@ -352,15 +348,15 @@ img {
   color: var(--basic-black);
 }
 
-.social__list {
+.social-list {
   list-style: none;
 }
 
-.social__link {
+.social-list__link {
   background-color: var(--basic-blue);
 }
 
-.developer__content {
+.developer {
   line-height: 26px;
 }
 
