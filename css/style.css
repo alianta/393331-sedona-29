@@ -11,7 +11,6 @@
   --black: #231F20;
   --basic-blue: #81B3D2;
   --basic-dark-blue: #669EC0;
-  ;
   --basic-very-dark-blue: #5496BD;
   --basic-opacity-black: rgba(0, 0, 0, 0.3);
   --basic-opacity-white: rgba(255, 255, 255, 0.9);
@@ -22,14 +21,18 @@
   --basic-very-dark-brown: #503E33;
   --main-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   /* Шрифты */
-  --basic-font-family: 'PT Sans', sans-serif;
+  --font-family-basic: 'PT Sans', sans-serif;
+  --font-size-small: 12px;
+  --font-size-main: 14px;
+  --font-size-big: 21px;
+  --font-size-extra-big: 30px;
 }
 
 .page-body {
   background-color: var(--basic-light-gray);
-  font-family: var(--basic-font-family);
+  font-family: var(--font-family-basic);
   font-style: normal;
-  font-size: 14px;
+  font-size: var(--font-size-main);
   line-height: 1em;
   font-weight: normal;
   color: var(--basic-black);
@@ -69,9 +72,7 @@ img {
 
 .site-navigation {
   list-style: none;
-  font-family: var(--basic-font-family);
   font-weight: bold;
-  font-size: 14px;
   line-height: 26px;
 }
 
@@ -96,16 +97,12 @@ img {
 /* Main content */
 
 .description__header {
-  font-family: inherit;
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
 }
 
 .description__content {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 26px;
 }
 
@@ -115,17 +112,13 @@ img {
 }
 
 .item-header {
-  font-family: inherit;
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 21px;
 }
 
 .item-content,
 .item-number {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 }
 
@@ -152,28 +145,24 @@ img {
 }
 
 .interesting__header {
-  font-family: inherit;
   font-weight: bold;
-  font-size: 30px;
+  font-size: var(--font-size-extra-big);
   line-height: 24px;
 }
 
 .interesting__content {
-  font-family: inherit;
   font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 }
 
 .interesting__search {
   background-color: var(--basic-brown);
-  font-family: inherit;
   font-weight: bold;
   text-transform: inherit;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
   color: var(--basic-white);
-  width: 568px;
+  padding: 30px 139.5px;
   border: 0;
 }
 
@@ -191,14 +180,12 @@ img {
 
 .interesting-form__find {
   background-color: var(--basic-blue);
-  font-family: inherit;
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
   text-transform: inherit;
   color: var(--basic-white);
-  width: 458px;
-  height: 58px;
+  padding: 16px 196px;
   border: 0;
 }
 
@@ -226,16 +213,14 @@ img {
 }
 
 .sorting {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   line-height: 18px;
   color: var(--basic-black);
 }
 
 .sorting__result-text {
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
 }
 
@@ -291,14 +276,12 @@ img {
 
 .hotels-item__name {
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
   color: var(--basic-black);
 }
 
 .hotels-item__type {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
   color: var(--basic-dark-gray);
 }
@@ -307,7 +290,6 @@ img {
   padding: 6.5px 17px;
   background-color: var(--basic-blue);
   font-weight: bold;
-  font-size: 14px;
   color: var(--basic-white);
   display: inline-block;
   text-align: center
@@ -327,7 +309,6 @@ img {
   padding: 6.5px 17px;
   background-color: var(--basic-brown);
   font-weight: bold;
-  font-size: 14px;
   color: var(--basic-white);
   display: inline-block;
   text-align: center
@@ -346,8 +327,6 @@ img {
 .hotels-item__rating {
   padding: 6.5px 14px;
   background-color: var(--basic-light-gray);
-  font-weight: normal;
-  font-size: 14px;
   color: var(--brown);
   display: inline-block;
   text-align: center;
@@ -363,9 +342,8 @@ img {
 }
 
 .contacts {
-  font-family: inherit;
   font-weight: bold;
-  font-size: 21px;
+  font-size: var(--font-size-big);
   line-height: 26px;
   color: var(--basic-black);
 }
@@ -383,9 +361,6 @@ img {
 }
 
 .developer__content {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 26px;
 }
 
