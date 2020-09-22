@@ -20,30 +20,30 @@
           <li class="site-navigation__item"><a class="site-navigation__link" href="blank.html">Информация</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link_current" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="content-container">
-      <section>
+      <section class="search">
         <!-- Фильтр посика. Тут будет форма-->
-        <button type="button">Показать</button>
+        <button class="search__show-button" type="button">Показать</button>
       </section>
       <section class="sorting">
         <h3 class="sorting__result-text">Найдено: <span class="sorting__result-value">3</span></h3>
-        <p class="sotring__name">Сортировка:</p>
-        <a class="sorting__byprice active" href="#">По цене</a>
+        <p class="sorting__name">Сортировка:</p>
+        <a class="sorting__byprice sorting__byprice_active" href="#">По цене</a>
         <a class="sorting__bytype" href="#">По типу</a>
         <a class="sorting__byrating" href="#">По рейтингу</a>
         <a class="sorting__asc" href="#">&#9650;</a>
-        <a class="sorting__dsc active" href="#">&#9660;</a>
+        <a class="sorting__dsc sorting__dsc_active" href="#">&#9660;</a>
       </section>
       <section class="hotels">
-        <h1 class="hotels__header hidden">Отели Седоны</h1>
+        <h1 class="hotels__header header-for-robots-and-readers">Отели Седоны</h1>
         <article class="hotels-item">
           <a class="hotels-item__link" href="blank.html">
             <h3 class="hotels-item__name">Amara Resort & Spa</h3>
-            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Amara Resort & Spa">
+            <img class="hotels-item__img" src="img/hotel_1.jpg" width="135" height="90" alt="Amara Resort & Spa">
           </a>
           <p class="hotels-item__type">
             Гостиница От 4000 Р.
@@ -59,7 +59,7 @@
         <article class="hotels-item">
           <a class="hotels-item__link" href="blank.html">
             <h3 class="hotels-item__name">Desert Quail Inn</h3>
-            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn">
+            <img class="hotels-item__img" src="img/hotel_2.jpg" width="135" height="90" alt="Desert Quail Inn">
           </a>
           <p class="hotels-item__type">
             Мотель От 3000 Р.
@@ -75,7 +75,7 @@
         <article class="hotels-item">
           <a class="hotels-item__link" href="blank.html">
             <h3 class="hotels-item__name">Villas at Poco Diablo</h3>
-            <img class="hotels-item__img" src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo">
+            <img class="hotels-item__img" src="img/hotel_3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </a>
           <p class="hotels-item__type">
             Апартаменты От 2000 Р.
@@ -91,14 +91,14 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="main-footer__contacts">
-        <h2 class="contacts__header hidden">Контакты.</h2>
-        <p class="contacts">
+      <section class="contacts">
+        <h2 class="contacts__header header-for-robots-and-readers">Контакты.</h2>
+        <p class="contacts__block">
           <a class="contacts__link" href="#">#visitSEDONA</a><br> ТЕЛ: <a class="contacts__link" href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
       </section>
-      <section class="main-footer__social">
-        <h2 class="social_hedaer hidden">Мы в социальных сетях.</h2>
+      <section class="social">
+        <h2 class="social__header header-for-robots-and-readers">Мы в социальных сетях.</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">Твиттер</a>
@@ -112,7 +112,7 @@
         </ul>
       </section>
       <section class="developer">
-        <h2 class="developer__header hidden">Разработчики сайта.</h2>
+        <h2 class="developer_header header-for-robots-and-readers">Разработчики сайта.</h2>
         <p class="developer__content">
           Website by
           <a class="developer__link" href="https://htmlacademy.ru">

@@ -1,4 +1,5 @@
 :root {
+  /* Цвета */
   --basic-white: #ffffff;
   --basic-light-gray: #F2F2F2;
   --basic-gray: #888888;
@@ -19,22 +20,27 @@
   --basic-dark-brown: #604E43;
   --brown: #666666;
   --basic-very-dark-brown: #503E33;
+  --main-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  /* Шрифты */
   --basic-font-family: 'PT Sans', sans-serif;
 }
 
 .page-body {
   background-color: var(--basic-light-gray);
+  font-family: var(--basic-font-family);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1em;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .page-container {
-  min-width: 1200px;
-  font-family: var(--basic-font-family);
-  font-size: 14px;
-  font-weight: 21px;
-  font-weight: 400;
-  color: var(--basic-black);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  text-transform: uppercase;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--main-shadow);
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
@@ -49,7 +55,7 @@ img {
   height: auto;
 }
 
-.hidden {
+.header-for-robots-and-readers {
   display: none;
 }
 
@@ -58,25 +64,22 @@ img {
 
 .main-navigation {
   width: 1200px;
-  height: 56px;
   background-color: var(--basic-white);
 }
 
 .site-navigation {
   list-style: none;
   font-family: var(--basic-font-family);
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .site-navigation__link {
   color: var(--basic-black);
 }
 
-.site-navigation__link--current {
+.site-navigation__link_current {
   color: var(--basic-brown);
 }
 
@@ -94,20 +97,16 @@ img {
 
 .description__header {
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .description__content {
   font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .reasons-list,
@@ -117,21 +116,17 @@ img {
 
 .item-header {
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  text-transform: uppercase;
 }
 
 .item-content,
 .item-number {
   font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
 }
 
 .reasons-list__item--left,
@@ -158,33 +153,27 @@ img {
 
 .interesting__header {
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  text-transform: uppercase;
 }
 
 .interesting__content {
   font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
 }
 
 .interesting__search {
   background-color: var(--basic-brown);
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
+  text-transform: inherit;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-white);
   width: 568px;
-  height: 86px;
   border: 0;
 }
 
@@ -203,11 +192,10 @@ img {
 .interesting-form__find {
   background-color: var(--basic-blue);
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
+  text-transform: inherit;
   color: var(--basic-white);
   width: 458px;
   height: 58px;
@@ -233,13 +221,15 @@ img {
 
 /* Hotels. Main content*/
 
+.search__show-button {
+  text-transform: inherit;
+}
+
 .sorting {
   font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -251,7 +241,8 @@ img {
 
 .sorting a {
   color: inherit;
-  border-bottom: dotted;
+  border-bottom: dashed;
+  border-bottom-width: 1px;
   opacity: 0.3;
   border-color: var(--basic-blue);
 }
@@ -262,8 +253,15 @@ img {
   opacity: 1;
 }
 
+.sorting a:active,
 .sorting a:active {
+  border-bottom: none;
   color: var(--basic-black);
+  opacity: 1;
+}
+
+.sorting .sorting__byprice_active {
+  color: var(--basic-blue);
   opacity: 1;
   border-bottom: none;
 }
@@ -284,23 +282,17 @@ img {
 }
 
 .sorting .sorting__asc:active,
-.sorting .sorting__dsc:active {
+.sorting .sorting__dsc:active,
+.sorting .sorting__dsc_active {
   border-bottom: none;
-  color: var(--basic-blue);
-}
-
-.sorting .active {
   color: var(--basic-blue);
   opacity: 1;
-  border-bottom: none;
 }
 
 .hotels-item__name {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -312,13 +304,10 @@ img {
 }
 
 .hotels-item__detail {
-  width: 110px;
-  height: 27px;
+  padding: 6.5px 17px;
   background-color: var(--basic-blue);
   font-weight: bold;
   font-size: 14px;
-  /* line-height: 21px;*/
-  line-height: 27px;
   color: var(--basic-white);
   display: inline-block;
   text-align: center
@@ -335,13 +324,10 @@ img {
 }
 
 .hotels-item__reserv {
-  width: 142px;
-  height: 27px;
+  padding: 6.5px 17px;
   background-color: var(--basic-brown);
   font-weight: bold;
   font-size: 14px;
-  /*line-height: 21px;*/
-  line-height: 27px;
   color: var(--basic-white);
   display: inline-block;
   text-align: center
@@ -358,13 +344,10 @@ img {
 }
 
 .hotels-item__rating {
-  width: 110px;
-  height: 27px;
+  padding: 6.5px 14px;
   background-color: var(--basic-light-gray);
   font-weight: normal;
   font-size: 14px;
-  /*line-height: 21px;*/
-  line-height: 27px;
   color: var(--brown);
   display: inline-block;
   text-align: center;
@@ -379,13 +362,11 @@ img {
   background-color: var(--basic-opacity-white);
 }
 
-.main-footer__contacts {
+.contacts {
   font-family: inherit;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -403,7 +384,6 @@ img {
 
 .developer__content {
   font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
