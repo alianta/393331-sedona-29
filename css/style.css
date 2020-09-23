@@ -96,6 +96,12 @@ img {
 
 /* Main content */
 
+.poster {
+  background-color: var(--basic-blue);
+  background-image: url(../img/sedona.jpg);
+  text-align: center;
+}
+
 .description__header {
   font-weight: bold;
   font-size: var(--font-size-big);
@@ -201,8 +207,9 @@ img {
   color: var(--basic-big-opacity-white);
 }
 
-.map {
-  background-image: url(img/map.jpg);
+.map-container {
+  background-color: var(--basic-very-light-gray);
+  background-image: url(../img/map.jpg);
 }
 
 
