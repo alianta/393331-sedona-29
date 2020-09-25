@@ -70,10 +70,31 @@ img {
   background-color: var(--basic-white);
 }
 
+.logo {
+  position: absolute;
+  left: 605px;
+}
+
 .site-navigation {
   list-style: none;
   font-weight: bold;
   line-height: 26px;
+  margin: 0 72px;
+  padding: 0px;
+  display: grid;
+  grid-column-gap: 144px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.site-navigation__item:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.site-navigation__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 100px;
 }
 
 .site-navigation__link {
@@ -100,6 +121,7 @@ img {
   background-color: var(--basic-blue);
   background-image: url(../img/sedona.jpg);
   text-align: center;
+  height: 509px;
 }
 
 .description__header {
