@@ -88,8 +88,10 @@
         </section>
       </section>
       <div class="map-container">
+        <!-- Попытка подключить карту JS-->
+        <!--<div id="map" width="1200" height="800">123</div>-->
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050600227!2d-111.83015813851428!3d34.85437338099179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1599930496020!5m2!1sru!2sru"
-          width="1199" height="594" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          width="1199" height="474" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </main>
     <footer class="main-footer">
@@ -127,6 +129,29 @@
       </section>
     </footer>
   </div>
+  <!--
+  <script>
+    /* Попытка подключить карту */
+
+    function initMap() {
+      var coordinates = {
+          lat: 47.212325,
+          lng: 38.933663
+        },
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: coordinates
+        }),
+
+        marker = new google.maps.Marker({
+          position: coordinates,
+          map: map,
+          animation: google.maps.Animation.BOUNCE
+        });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVO0jnpeT5nMOzS9LEG1srk2lchp4LMug&callback=initMap"></script>
+-->
 </body>
 
 </html>
