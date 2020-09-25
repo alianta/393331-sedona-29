@@ -118,7 +118,7 @@ img {
 /* Main content */
 
 .poster {
-  background-color: var(--basic-blue);
+  background-color: var(--medium-gray);
   background-image: url(../img/sedona.jpg);
   text-align: center;
   height: 509px;
@@ -232,6 +232,11 @@ img {
 .map-container {
   background-color: var(--basic-very-light-gray);
   background-image: url(../img/map.jpg);
+}
+
+.map {
+  width: 100%;
+  height: 473px;
 }
 
 
