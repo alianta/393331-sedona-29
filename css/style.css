@@ -19,7 +19,7 @@
   --basic-dark-brown: #604E43;
   --brown: #666666;
   --basic-very-dark-brown: #503E33;
-  --main-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  --main-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   /* Шрифты */
   --font-family-basic: 'PT Sans', sans-serif;
   --font-size-small: 12px;
@@ -72,7 +72,8 @@ img {
 
 .logo {
   position: absolute;
-  left: 605px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-navigation {
@@ -80,7 +81,7 @@ img {
   font-weight: bold;
   line-height: 26px;
   margin: 0 72px;
-  padding: 0px;
+  padding: 0;
   display: grid;
   grid-column-gap: 144px;
   grid-template-columns: repeat(5, 1fr);
@@ -137,6 +138,17 @@ img {
 .reasons-list,
 .city-useful-list {
   list-style: none;
+}
+
+.reasons-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.reasons-list li:nth-of-type(1),
+.reasons-list li:nth-of-type(2) {
+  grid-column: 1 / -1;
 }
 
 .item-header {
