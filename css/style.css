@@ -123,10 +123,18 @@ img {
   height: 509px;
 }
 
+.description {
+  text-align: center;
+  padding: 42px 72px 51px 72px;
+}
+
 .description__header {
   font-weight: bold;
   font-size: var(--font-size-big);
   line-height: 26px;
+  max-width: 470px;
+  text-align: center;
+  display: inline-block;
 }
 
 .description__content {
