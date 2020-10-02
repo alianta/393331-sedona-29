@@ -220,13 +220,21 @@ img {
   color: var(--basic-dark-gray);
 }
 
+.interesting {
+  text-align: center;
+  padding: 27px 382px 132px 382px;
+  position: relative;
+}
+
 .interesting__header {
+  margin: 30px 0;
   font-weight: bold;
   font-size: var(--font-size-extra-big);
   line-height: 24px;
 }
 
 .interesting__content {
+  margin: 0;
   font-weight: normal;
   line-height: 21px;
 }
@@ -240,6 +248,10 @@ img {
   color: var(--basic-white);
   padding: 30px 139.5px;
   border: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 .interesting__search:hover,
@@ -252,6 +264,10 @@ img {
   background-color: var(--basic-very-dark-brown);
   outline: none;
   color: var(--basic-big-opacity-white);
+}
+
+.interesting-form {
+  position: absolute;
 }
 
 .interesting-form__find {
