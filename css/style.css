@@ -147,14 +147,34 @@ img {
 }
 
 .reasons-list {
+  padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 
-.reasons-list li:nth-of-type(1),
-.reasons-list li:nth-of-type(2) {
+.reasons-list>li:nth-of-type(1) {
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item-container {
+  grid-column: 1/2;
+  text-align: center;
+  padding: 50px;
+}
+
+.reasons-list>li:nth-of-type(2) {
+  grid-column: 1 / -1;
+  grid-column-start: 3;
+  text-align: center;
+  padding: 50px;
+}
+
+.reasons-list>li:nth-of-type(n+3) {
+  padding: 47px 71px 54px 71px;
+  text-align: center;
 }
 
 .item-header {
@@ -180,6 +200,16 @@ img {
 
 .city-useful-list {
   background-color: var(--basic-white);
+  margin: 0;
+  padding: 0;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.city-useful-list__item {
+  text-align: center;
+  padding: 160px 52px 82px 52px;
 }
 
 .city-useful-list__item .item-header {
