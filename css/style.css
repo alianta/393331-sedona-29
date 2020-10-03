@@ -88,16 +88,21 @@ img {
   list-style: none;
   font-weight: bold;
   line-height: 26px;
-  margin: 0;
+  margin: 0 72px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .site-navigation__item {
-  padding: 15px 72px;
-  min-width: 100px;
-  max-width: 180px;
+  padding-right: 27px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 200px;
+}
+
+.site-navigation__item:nth-child(n+3) {
+  text-align: right;
 }
 
 .site-navigation__item:nth-child(3) {
