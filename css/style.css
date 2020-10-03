@@ -323,7 +323,13 @@ img {
   text-transform: inherit;
 }
 
+.centering-content {
+  margin: 0 72px;
+  display: flex;
+}
+
 .sorting {
+  min-height: 86px;
   font-size: var(--font-size-small);
   line-height: 18px;
   color: var(--basic-black);
@@ -372,6 +378,10 @@ img {
   border-bottom: none;
   color: var(--basic-blue);
   opacity: 1;
+}
+
+.sorting__text-link {
+  padding: 0 16px;
 }
 
 .sorting .sorting__text-link_active,
