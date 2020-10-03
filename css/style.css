@@ -47,6 +47,8 @@
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
