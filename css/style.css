@@ -21,7 +21,7 @@
   --basic-very-dark-brown: #503E33;
   --main-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   /* Шрифты */
-  --font-family-basic: 'PT Sans', sans-serif;
+  --font-family-basic: 'PT Sans', "Arial", sans-serif;
   --font-size-small: 12px;
   --font-size-main: 14px;
   --font-size-big: 21px;
