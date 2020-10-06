@@ -89,24 +89,35 @@ img {
   list-style: none;
   font-weight: bold;
   line-height: 26px;
-  margin: 0 72px;
+  margin: 0 74px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .site-navigation__item {
-  padding-right: 27px;
+  margin-left: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 200px;
 }
 
-.site-navigation__item:nth-child(n+3) {
+.site-navigation__item:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+
+/*
+.site-navigation__item:nth-child(3n+1) {
+  margin-right: -2px;
+}*/
+
+.site-navigation__item:nth-child(4n+3),
+.site-navigation__item:nth-child(4n+4):not(:nth-child(1)) {
   text-align: right;
 }
 
-.site-navigation__item:nth-child(3) {
+.site-navigation__item:nth-child(4n+3) {
   margin-left: auto;
 }
 
