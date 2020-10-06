@@ -138,8 +138,9 @@ img {
 .poster {
   background-color: var(--medium-gray);
   background-image: url(../img/sedona.jpg);
-  text-align: center;
   height: 509px;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
