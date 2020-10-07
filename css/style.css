@@ -277,7 +277,8 @@ img {
   font-size: var(--font-size-big);
   line-height: 26px;
   color: var(--basic-white);
-  padding: 30px 139.5px;
+  min-width: 568px;
+  min-height: 86px;
   border: 0;
   position: absolute;
   left: 50%;
@@ -297,11 +298,18 @@ img {
   color: var(--basic-big-opacity-white);
 }
 
-.interesting-form {
+.search-form {
   position: absolute;
+  min-width: 568px;
+  min-height: 395px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  z-index: 2;
+  background-color: var(--basic-white);
 }
 
-.interesting-form__find {
+.search-form__find {
   background-color: var(--basic-blue);
   font-weight: bold;
   font-size: var(--font-size-big);
@@ -312,13 +320,13 @@ img {
   border: 0;
 }
 
-.interesting-form__find:hover,
-.interesting-form__find:focus {
+.search-form__find:hover,
+.search-form__find:focus {
   background-color: var(--basic-dark-blue);
   outline: none;
 }
 
-.interesting-form__find:active {
+.search-form__find:active {
   background-color: var(--basic-very-dark-blue);
   outline: none;
   color: var(--basic-big-opacity-white);
