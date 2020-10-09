@@ -188,6 +188,9 @@ img {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background-image: url(../img/city.jpg);
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 
 .item-container {
@@ -198,9 +201,16 @@ img {
 
 .reasons-list>li:nth-of-type(2) {
   grid-column: 1 / -1;
-  grid-column-start: 3;
   text-align: center;
-  padding: 50px;
+  background-image: url(../img/devill_bridge.jpg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+
+.reasons-list__item--right>.item-container {
+  grid-column: -2 / -1;
 }
 
 .reasons-list>li:nth-of-type(n+3) {
@@ -241,6 +251,7 @@ img {
 .city-useful-list__item {
   text-align: center;
   padding: 160px 52px 82px 52px;
+  position: relative;
 }
 
 .city-useful-list__item .item-header {
@@ -249,6 +260,42 @@ img {
 
 .city-useful-list__item .item-content {
   color: var(--basic-dark-gray);
+}
+
+.city-useful-list__item:nth-child(1) .item-header::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 75px;
+  height: 72px;
+  margin-left: -10px;
+  background-image: url(../img/home.svg);
+}
+
+.city-useful-list__item:nth-child(2) .item-header::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 75px;
+  height: 70px;
+  margin-left: -10px;
+  background-image: url(../img/eat.svg);
+}
+
+.city-useful-list__item:nth-child(3) .item-header::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 64px;
+  height: 77px;
+  margin-left: -10px;
+  background-image: url(../img/gift.svg);
 }
 
 .interesting {
