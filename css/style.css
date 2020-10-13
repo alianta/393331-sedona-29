@@ -84,7 +84,8 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  width: 1200px;
+  position: relative;
+  width: 100%;
   background-color: var(--basic-white);
 }
 
@@ -108,7 +109,7 @@ img {
   margin-left: 28px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 200px;
+  min-width: 200px;
 }
 
 .site-navigation__item:nth-child(4n+1) {
@@ -128,7 +129,7 @@ img {
   color: var(--basic-black);
 }
 
-.site-navigation__link_current {
+.site-navigation__link--current {
   color: var(--basic-brown);
 }
 
@@ -147,7 +148,8 @@ img {
 .poster {
   background-color: var(--medium-gray);
   background-image: url(../img/sedona.jpg);
-  height: 509px;
+  background-size: cover;
+  min-height: 509px;
   display: flex;
   justify-content: center;
 }
@@ -219,6 +221,8 @@ img {
 }
 
 .item-header {
+  max-width: 125px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: var(--font-size-big);
   line-height: 21px;
@@ -262,40 +266,25 @@ img {
   color: var(--basic-dark-gray);
 }
 
-.city-useful-list__item:nth-child(1) .item-header::before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 75px;
-  height: 72px;
-  margin-left: -10px;
+.city-useful-list__item--home {
   background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 60px;
 }
 
-.city-useful-list__item:nth-child(2) .item-header::before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 75px;
-  height: 70px;
-  margin-left: -10px;
+.city-useful-list__item--eat {
   background-image: url(../img/eat.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 61px;
 }
 
-.city-useful-list__item:nth-child(3) .item-header::before {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 64px;
-  height: 77px;
-  margin-left: -10px;
+.city-useful-list__item--gift {
   background-image: url(../img/gift.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 55px;
 }
 
 .interesting {
@@ -466,11 +455,15 @@ img {
 }
 
 .sorting__text-link {
-  padding: 0 16px;
+  margin: 0 16px;
 }
 
-.sorting .sorting__text-link_active,
-.sorting .sorting__pic-link_active {
+.sorting__pic-link--right {
+  margin-left: 500px;
+}
+
+.sorting .sorting__text-link--active,
+.sorting .sorting__pic-link--active {
   color: var(--basic-blue);
   opacity: 1;
   border-bottom: none;
@@ -576,43 +569,37 @@ img {
 .for_star:before {
   content: "";
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 0;
+  right: 25px;
   transform: translate(-50%, 50%);
-  width: 75px;
+  min-width: 90px;
   height: 72px;
-  background-image: url(../img/star.svg), url(../img/star.svg), url(../img/star.svg), url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0, 25px 0, 50px 0, 75px 0;
-  min-width: 100px;
+  background-image: url(../img/star.svg);
+  background-repeat: space no-repeat;
 }
 
 .three_star::before {
   content: "";
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 0;
+  right: 38px;
   transform: translate(-50%, 50%);
-  width: 75px;
+  min-width: 65px;
   height: 72px;
-  background-image: url(../img/star.svg), url(../img/star.svg), url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0, 25px 0, 50px 0;
-  min-width: 100px;
+  background-image: url(../img/star.svg);
+  background-repeat: space no-repeat;
 }
 
 .two_star::before {
   content: "";
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 0;
+  right: 50px;
   transform: translate(-50%, 50%);
-  width: 75px;
+  min-width: 45px;
   height: 72px;
-  background-image: url(../img/star.svg), url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0, 25px 0;
-  min-width: 100px;
+  background-image: url(../img/star.svg);
+  background-repeat: space no-repeat;
 }
 
 
