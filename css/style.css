@@ -152,10 +152,56 @@ img {
   min-height: 509px;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.poster::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 57px solid white;
+  border-right: 600px solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.poster::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 57px solid white;
+  border-right: 350px solid transparent;
+  position: absolute;
+  left: 250px;
+  bottom: 0;
 }
 
 .description {
   text-align: center;
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 57px solid white;
+  border-left: 600px solid transparent;
+  position: absolute;
+  right: 0;
+  top: -57px;
+}
+
+.description::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 57px solid white;
+  border-left: 350px solid transparent;
+  position: absolute;
+  right: 250px;
+  top: -57px;
 }
 
 .description__header {
