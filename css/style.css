@@ -93,6 +93,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .site-navigation {
@@ -244,7 +245,7 @@ img {
 .item-container {
   grid-column: 1/2;
   text-align: center;
-  padding: 50px;
+  padding: 47px 51px 54px 51px;
 }
 
 .reasons-list>li:nth-of-type(2) {
@@ -267,11 +268,20 @@ img {
 }
 
 .item-header {
-  max-width: 125px;
+  max-width: 151px;
   margin: 0 auto;
   font-weight: bold;
   font-size: var(--font-size-big);
   line-height: 21px;
+}
+
+.item-number {
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
+.item-content {
+  margin: 0;
 }
 
 .item-content,
@@ -306,6 +316,7 @@ img {
 
 .city-useful-list__item .item-header {
   color: var(--basic-black);
+  margin-bottom: 25px;
 }
 
 .city-useful-list__item .item-content {
