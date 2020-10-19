@@ -25,10 +25,32 @@
       </nav>
     </header>
     <main class="content-container">
-      <section class="search">
-        <!-- Фильтр посика. Тут будет форма-->
-        <button class="search__show-button" type="button">Показать</button>
-      </section>
+
+      <form class="search" action="https://echo.htmlacademy.ru/courses" method="get">
+        <fieldset class="search__block-item">
+          <legend class="search__block-legend">Инфраструктура:</legend>
+          <input id="swim" class="search__input-checkbox visually-hidden" type="checkbox" checked>
+          <label for="swim">Бассейн</label>
+          <input id="parking" class="search__input-checkbox visually-hidden" type="checkbox">
+          <label for="parking">Парковка</label>
+          <input id="wifi" class="search__input-checkbox visually-hidden" type="checkbox" disabled>
+          <label for="wifi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="search__block-item">
+          <legend class="search__block-legend">Тип жилья:</legend>
+          <input id="hotel" class="search__input-checkbox visually-hidden" type="checkbox" checked>
+          <label for="hotel">Гостиница</label>
+          <input id="motel" class="search__input-checkbox visually-hidden" type="checkbox" checked>
+          <label for="motel">Мотель</label>
+          <input id="apart" class="search__input-checkbox visually-hidden" type="checkbox" disabled checked>
+          <label for="apart">Апартаменты</label>
+        </fieldset>
+        <fieldset class="search__block-item">
+          <legend class="search__block-legend">Стоимость в стуки (р):</legend>
+          <input class="search__show-button" type="submit" value="Показать">
+        </fieldset>
+      </form>
+
       <section class="sorting">
         <div class="centering-content">
           <h3 class="sorting__result-text">Найдено: 3</h3>
