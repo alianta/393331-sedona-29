@@ -627,6 +627,15 @@ img {
   margin: 0;
 }
 
+.hotels-item__name:hover,
+.hotels-item__name:focus {
+  color: var(--basic-blue);
+}
+
+.hotels-item__name:active {
+  color: var(--basic-opacity-black);
+}
+
 .hotels-item__info-block {
   grid-column: 2;
   grid-row: 2/4;
