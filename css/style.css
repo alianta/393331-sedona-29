@@ -4,6 +4,8 @@
   --basic-light-gray: #F2F2F2;
   --basic-gray: #888888;
   --light-gray: #BDBBBC;
+  --filter-gray: #ABABAB;
+  --filter-opacity-gray: rgba(171, 171, 171, 0.3);
   --medium-gray: #CACACA;
   --border-gray: #E5E5E5;
   --basic-very-light-gray: #EEEEEE;
@@ -438,17 +440,31 @@ img {
 
 /* Hotels. Main content*/
 
-.search {
+.substrate {
   min-height: 218px;
   background-image: url(../img/hotels_filter_background.jpg);
+}
+
+.search {
+  min-height: 218px;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: var(--basic-white);
 }
 
 .search__block-item {
   border: 0;
+  padding: 0;
+  margin-right: 118px;
+}
+
+.search__block-item:nth-child(3) {
+  margin-left: 196px;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .search__block-legend {
@@ -456,14 +472,14 @@ img {
   font-weight: bold;
 }
 
-.search__block-item label {
+.search__block-item>label {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
   margin-left: 50px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .search__input-checkbox+label::before {
@@ -508,6 +524,76 @@ img {
   height: 23px;
   background-image: url(../img/checkbox-active-blocked.svg);
   background-repeat: no-repeat;
+}
+
+.search__price-controls {
+  display: flex;
+  justify-content: center;
+  min-width: 315px;
+  border: 2px solid var(--basic-white);
+}
+
+.search__price-controls input {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.search__min-price,
+.search__max-price {
+  width: 100%;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.search__min-price {
+  border-right: 2px solid var(--basic-white);
+}
+
+.search__min-price input,
+.search__max-price input {
+  width: 35px;
+}
+
+.search__scale {
+  width: 316px;
+  height: 2px;
+  background-color: var(--basic-big-opacity-white);
+}
+
+.search__bar {
+  width: 248px;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.search__range-controls {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.search__toggle {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--filter-gray);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--filter-opacity-gray);
+  cursor: pointer;
+}
+
+.search__toggle--min {
+  left: -14px;
+}
+
+.search__toggle--max {
+  left: 236px;
 }
 
 .search__show-button {
