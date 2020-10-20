@@ -499,7 +499,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.search__input-checkbox:disabled:active+label::before {
+.search__input-checkbox:disabled:checked+label::before {
   content: "";
   position: absolute;
   top: 4px;
