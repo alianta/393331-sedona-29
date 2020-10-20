@@ -470,6 +470,7 @@ img {
 .search__block-legend {
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .search__block-item>label {
@@ -486,7 +487,6 @@ img {
   content: "";
   position: absolute;
   left: -46px;
-  top: 0;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -496,7 +496,6 @@ img {
 .search__input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  top: 4px;
   left: -46px;
   width: 27px;
   height: 23px;
@@ -507,7 +506,6 @@ img {
 .search__input-checkbox:disabled+label::before {
   content: "";
   position: absolute;
-  top: 4px;
   left: -46px;
   width: 27px;
   height: 23px;
@@ -588,12 +586,8 @@ img {
   cursor: pointer;
 }
 
-.search__toggle--min {
-  left: -14px;
-}
-
 .search__toggle--max {
-  left: 236px;
+  left: 250px;
 }
 
 .search__show-button {
