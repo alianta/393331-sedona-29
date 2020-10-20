@@ -5,6 +5,8 @@
   --basic-gray: #888888;
   --light-gray: #BDBBBC;
   --filter-gray: #ABABAB;
+  --very-light-gray: #A9A9A9;
+  --background-gray: #EBEBEB;
   --filter-opacity-gray: rgba(171, 171, 171, 0.3);
   --medium-gray: #CACACA;
   --border-gray: #E5E5E5;
@@ -23,6 +25,7 @@
   --brown: #666666;
   --basic-very-dark-brown: #503E33;
   --main-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  --form-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   /* Шрифты */
   --font-family-basic: 'PT Sans', "Arial", sans-serif;
   --font-size-small: 12px;
@@ -394,6 +397,7 @@ img {
 }
 
 .search-form {
+  font-weight: bold;
   position: absolute;
   min-width: 568px;
   min-height: 395px;
@@ -402,6 +406,57 @@ img {
   top: 100%;
   z-index: 2;
   background-color: var(--basic-white);
+  box-shadow: var(--form-shadow);
+}
+
+.search-form__item {
+  position: relative;
+}
+
+.search-form__item input {
+  min-width: 364px;
+  min-height: 38px;
+  border: none;
+  padding: 13px 35px 13px 6px;
+  text-transform: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.search-form__item input::placeholder {
+  color: inherit;
+}
+
+.search-form__item input {
+  background-color: var(--basic-light-gray);
+}
+
+.search-form__item input:hover {
+  background-color: var(--background-gray);
+}
+
+.search-form__item input:focus {
+  background: var(--basic-white);
+  outline: 2px solid var(--border-gray);
+  outline-offset: -2px;
+}
+
+.search-form__calendar {
+  position: absolute;
+  fill: var(--very-light-gray);
+  right: 9px;
+  top: 8px;
+  width: 21px;
+  height: 23px;
+}
+
+.search-form__calendar:hover path,
+.search-form__calendar:focus path {
+  fill: var(--basic-black);
+}
+
+.search-form__calendar:active path {
+  fill: var(--basic-blue);
 }
 
 .search-form__find {
