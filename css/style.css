@@ -676,6 +676,24 @@ img {
   color: inherit;
 }
 
+
+/* Для Chrome */
+
+.search__price-controls input[type=number]::-webkit-inner-spin-button,
+.search__price-controls input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+/* Для Firefox */
+
+.search__price-controls input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .search__min-price,
 .search__max-price {
   width: 100%;
