@@ -725,6 +725,11 @@ img {
   cursor: pointer;
 }
 
+.search__toggle:hover,
+.search__toggle:focus {
+  border-width: 9px;
+}
+
 .search__toggle--max {
   left: 250px;
 }
