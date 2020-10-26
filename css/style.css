@@ -581,6 +581,7 @@ img {
 
 .substrate {
   min-height: 218px;
+  background-color: var(--basic-blue);
   background-image: url(../img/hotels_filter_background.jpg);
 }
 
