@@ -158,28 +158,8 @@
       </section>
     </footer>
   </div>
-
-  <script>
-    function myMap() {
-      var coordinates = {
-        lat: 34.86,
-        lng: -111.77
-      };
-      var image = 'img/site_logo.png';
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: coordinates,
-        zoom: 14
-      });
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        icon: image,
-        animation: google.maps.Animation.BOUNCE
-      });
-
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVO0jnpeT5nMOzS9LEG1srk2lchp4LMug&callback=myMap" async defer></script>
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVO0jnpeT5nMOzS9LEG1srk2lchp4LMug&callback=mainMap" async defer></script>
 </body>
 
 </html>
