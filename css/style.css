@@ -382,6 +382,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+  cursor: pointer;
 }
 
 .interesting__search:hover,
@@ -460,6 +461,7 @@ img {
   top: 8px;
   width: 21px;
   height: 23px;
+  cursor: pointer;
 }
 
 .search-form__calendar:hover path,
@@ -506,8 +508,12 @@ img {
   -moz-appearance: textfield;
 }
 
-.search-form__input-btn--sub {
+.search-form__input-btn {
   position: absolute;
+  cursor: pointer;
+}
+
+.search-form__input-btn--sub {
   content: "";
   width: 12px;
   height: 3px;
@@ -530,7 +536,6 @@ img {
 
 .search-form__input-btn--add {
   right: 10px;
-  position: absolute;
 }
 
 .search-form__input-btn--add path:hover,
@@ -552,6 +557,7 @@ img {
   padding: 16px 196px;
   border: 0;
   margin: 40px 55px 55px 55px;
+  cursor: pointer;
 }
 
 .search-form__find:hover,
@@ -761,6 +767,7 @@ img {
   border-radius: 2px;
   background-color: inherit;
   color: inherit;
+  cursor: pointer;
 }
 
 .search__show-button:hover,
