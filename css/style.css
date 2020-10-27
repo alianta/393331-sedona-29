@@ -629,6 +629,11 @@ img {
   margin-bottom: 25px;
 }
 
+.search__input-checkbox:focus+label {
+  outline: 2px solid var(--basic-blue);
+  outline-offset: 5px;
+}
+
 .search__input-checkbox+label::before {
   content: "";
   position: absolute;
