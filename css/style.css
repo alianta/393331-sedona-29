@@ -589,13 +589,12 @@ img {
 /* Hotels. Main content*/
 
 .substrate {
-  min-height: 218px;
   background-color: var(--basic-blue);
   background-image: url(../img/hotels_filter_background.jpg);
 }
 
 .search {
-  min-height: 218px;
+  min-height: 217px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -606,20 +605,23 @@ img {
   border: 0;
   padding: 0;
   margin-right: 118px;
+  margin-left: 0;
+  margin-top: 23px;
 }
 
 .search__block-item:nth-child(3) {
-  margin-left: 196px;
+  margin-left: 231px;
   margin-right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: flex-start;
+  margin-top: 28px;
 }
 
 .search__block-legend {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .search__block-item>label {
@@ -627,9 +629,9 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-left: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-left: 39px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .search__input-checkbox:focus+label {
@@ -640,7 +642,8 @@ img {
 .search__input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -46px;
+  left: -40px;
+  top: -3px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -650,7 +653,7 @@ img {
 .search__input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  left: -46px;
+  left: -40px;
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-active.svg);
@@ -678,10 +681,14 @@ img {
   background-repeat: no-repeat;
 }
 
+.search__range-filter {
+  margin-top: 16px;
+}
+
 .search__price-controls {
   display: flex;
   justify-content: center;
-  min-width: 315px;
+  min-width: 313px;
   border: 2px solid var(--basic-white);
 }
 
@@ -713,8 +720,9 @@ img {
 .search__max-price {
   width: 100%;
   text-align: center;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 22px;
 }
 
 .search__min-price {
@@ -723,7 +731,12 @@ img {
 
 .search__min-price input,
 .search__max-price input {
-  width: 35px;
+  width: 8px;
+  padding: 0;
+}
+
+.search__max-price input {
+  width: 30px;
 }
 
 .search__scale {
@@ -733,7 +746,7 @@ img {
 }
 
 .search__bar {
-  width: 248px;
+  width: 256px;
   height: 2px;
   background: var(--basic-white);
 }
@@ -764,7 +777,7 @@ img {
 }
 
 .search__toggle--max {
-  left: 250px;
+  left: 252px;
 }
 
 .search__show-button {
@@ -776,6 +789,7 @@ img {
   background-color: inherit;
   color: inherit;
   cursor: pointer;
+  margin-right: 11px;
 }
 
 .search__show-button:hover,
@@ -785,7 +799,7 @@ img {
 }
 
 .centering-content {
-  margin: 0 72px;
+  margin: 0 73px;
   display: flex;
   align-items: center;
 }
@@ -799,7 +813,8 @@ img {
 
 .sorting__name {
   margin-right: 24px;
-  margin-left: 46px;
+  margin-left: 47px;
+  margin-top: 5px;
 }
 
 .sorting__result-text {
@@ -831,6 +846,7 @@ img {
 }
 
 .sorting .sorting__pic-link {
+  font-size: 14px;
   border-bottom: none;
   color: var(--medium-gray);
   opacity: 1;
@@ -853,7 +869,8 @@ img {
 }
 
 .sorting__pic-link--right {
-  margin-left: 500px;
+  margin-left: 489px;
+  margin-right: 6px;
 }
 
 .sorting .sorting__text-link--active,
