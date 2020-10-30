@@ -105,7 +105,7 @@ img {
   list-style: none;
   font-weight: bold;
   line-height: 26px;
-  margin: 0 73px;
+  margin: 0 72px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +113,7 @@ img {
 
 .site-navigation__item {
   margin-left: 28px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
   min-width: 200px;
 }
@@ -155,7 +155,7 @@ img {
   background-color: var(--medium-gray);
   background-image: url(../img/sedona.jpg);
   background-size: cover;
-  min-height: 509px;
+  min-height: 510px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -217,13 +217,13 @@ img {
   max-width: 470px;
   text-align: center;
   display: inline-block;
-  margin-top: 43px;
+  margin-top: 42px;
   margin-bottom: 31px
 }
 
 .description__content {
   line-height: 26px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 }
 
 .reasons-list,
@@ -250,7 +250,7 @@ img {
 .item-container {
   grid-column: 1/2;
   text-align: center;
-  padding: 47px 51px 54px 51px;
+  padding: 47px 42px 56px 43px;
 }
 
 .reasons-list>li:nth-of-type(2) {
