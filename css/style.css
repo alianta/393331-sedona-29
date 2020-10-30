@@ -268,7 +268,7 @@ img {
 }
 
 .reasons-list>li:nth-of-type(n+3) {
-  padding: 47px 71px 54px 71px;
+  padding: 47px 68px 56px 68px;
   text-align: center;
 }
 
@@ -351,21 +351,22 @@ img {
 
 .interesting {
   text-align: center;
-  padding: 27px 382px 132px 382px;
+  min-height: 235px;
   position: relative;
 }
 
 .interesting__header {
-  margin: 30px 0;
+  margin-top: 56px;
   font-weight: bold;
   font-size: var(--font-size-extra-big);
   line-height: 24px;
 }
 
 .interesting__content {
-  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-weight: normal;
-  line-height: 21px;
+  line-height: 24px;
 }
 
 .interesting__search {
@@ -415,7 +416,7 @@ img {
 .search-form__item {
   position: relative;
   width: 458px;
-  margin-top: 15px;
+  margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 55px;
   margin-right: 55px;
@@ -433,7 +434,7 @@ img {
   height: 38px;
   box-sizing: border-box;
   border: none;
-  padding: 13px 35px 13px 6px;
+  padding: 13px 35px 13px 13px;
   text-transform: inherit;
   font-weight: inherit;
   color: inherit;
@@ -474,12 +475,12 @@ img {
 }
 
 .search-form__item--left {
-  width: 220px;
+  width: 226px;
   margin-right: 0;
 }
 
 .search-form__item--right {
-  width: 180px;
+  width: 178px;
   margin-left: 53px;
 }
 
@@ -517,7 +518,8 @@ img {
   content: "";
   width: 12px;
   height: 3px;
-  right: 90px;
+  right: 89px;
+  top: 19px;
   background-color: var(--very-light-gray);
 }
 
@@ -535,7 +537,8 @@ img {
 }
 
 .search-form__input-btn--add {
-  right: 10px;
+  right: 13px;
+  top: 15px;
 }
 
 .search-form__input-btn--add path:hover,
@@ -1006,11 +1009,11 @@ img {
 /* Footer */
 
 .main-footer {
-  width: 1200px;
+  max-width: 1200px;
   height: 120px;
   background-color: var(--basic-opacity-white);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
 }
@@ -1020,7 +1023,7 @@ img {
   font-size: var(--font-size-big);
   line-height: 36px;
   margin-top: 10px;
-  margin-left: 12px;
+  margin-left: 123px;
   color: var(--basic-black);
 }
 
@@ -1033,7 +1036,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  margin: 0 auto;
+  margin-right: 14px;
   padding: 0;
   list-style: none;
 }
@@ -1066,6 +1069,8 @@ img {
   align-items: center;
   min-width: 197px;
   justify-content: space-between;
+  margin-right: 138px;
+  margin-top: 19px;
 }
 
 .developer__logo {
