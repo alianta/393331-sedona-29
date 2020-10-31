@@ -217,6 +217,7 @@ img {
   max-width: 470px;
   text-align: center;
   display: inline-block;
+  vertical-align: top;
   margin-top: 42px;
   margin-bottom: 31px
 }
@@ -943,6 +944,7 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   display: inline-block;
+  vertical-align: top;
   text-align: center
 }
 
@@ -962,6 +964,7 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   display: inline-block;
+  vertical-align: top;
   text-align: center
 }
 
@@ -984,6 +987,7 @@ img {
   background-color: var(--basic-light-gray);
   color: var(--brown);
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   grid-column: 4;
   grid-row: 1/4;
