@@ -1,3 +1,14 @@
+const hotelsSearchButton = document.getElementById("hotels-search");
+const hotelsSearchForm = document.getElementById("hotels-search-form");
+hotelsSearchForm.classList.add("visually-hidden");
+
+hotelsSearchButton.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  hotelsSearchForm.classList.toggle("visually-hidden");
+  hotelsSearchForm.classList.toggle("search-form--show");
+});
+
+/* Интерактивная карта с индивидуальным маркером в виде логотипа */
 function mainMap() {
   const coordinates = {
     lat: 34.86,
