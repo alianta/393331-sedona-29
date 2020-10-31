@@ -14,7 +14,7 @@ function mainMap() {
     lat: 34.86,
     lng: -111.77
   };
-  const image = 'img/site_logo.png';
+  const image = 'img/site_logo.svg';
   const map = new google.maps.Map(document.getElementById('map'), {
     center: coordinates,
     zoom: 14
