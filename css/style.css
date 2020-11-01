@@ -239,7 +239,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.reasons-list>li:nth-of-type(1) {
+.reasons-list__item--left {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -254,7 +254,7 @@ img {
   padding: 47px 42px 56px 43px;
 }
 
-.reasons-list>li:nth-of-type(2) {
+.reasons-list__item--right {
   grid-column: 1 / -1;
   text-align: center;
   background-image: url(../img/devill_bridge.jpg);
@@ -264,11 +264,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.reasons-list__item--right>.item-container {
+.item-container--right {
   grid-column: -2 / -1;
 }
 
-.reasons-list>li:nth-of-type(n+3) {
+.reasons-list__item:nth-of-type(n+3) {
   padding: 47px 68px 56px 68px;
   text-align: center;
 }
@@ -636,7 +636,7 @@ img {
   font-weight: bold;
 }
 
-.search__block-item>label {
+.search__input-checkbox-label {
   position: relative;
   display: block;
   cursor: pointer;
