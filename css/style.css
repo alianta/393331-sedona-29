@@ -274,7 +274,7 @@ img {
 }
 
 .item-header {
-  max-width: 151px;
+  max-width: 160px;
   margin: 0 auto;
   font-weight: bold;
   font-size: var(--font-size-big);
@@ -837,6 +837,7 @@ img {
 }
 
 .sorting a {
+  margin-bottom: 5px;
   color: inherit;
   border-bottom: dashed;
   border-bottom-width: 1px;
@@ -859,6 +860,7 @@ img {
 
 .sorting .sorting__pic-link {
   font-size: 14px;
+  margin-top: 8px;
   border-bottom: none;
   color: var(--medium-gray);
   opacity: 1;
