@@ -110,15 +110,29 @@
           </p>
           <p class="search-form__item search-form__item--left">
             <label for="search-form__adults">Взрослые:</label>
-            <span class="search-form__input-btn search-form__input-btn--sub" tabindex="0"></span>
+            <button type="button" class="search-form__input-btn search-form__input-btn--sub" id="adult__input-btn--sub" name="adult__input-btn--sub">
+              <span class="search-form__input-btn--sub-img" tabindex="0">
+              </span>
+            </button>
             <input id="search-form__adults" type="number" name="adults" min="0" value="2">
-            <svg class="search-form__input-btn search-form__input-btn--add" tabindex="0" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/></svg>
+            <button type="button" class="search-form__input-btn search-form__input-btn--add" id="adult__input-btn--add" name="adult__input-btn--add">
+              <svg class="search-form__input-btn--add-img" tabindex="0" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
+              </svg>
+            </button>
           </p>
           <p class="search-form__item search-form__item--right">
             <label for="search-form__children">Дети:</label>
-            <span class="search-form__input-btn search-form__input-btn--sub" tabindex="0"></span>
+            <button type="button" class="search-form__input-btn search-form__input-btn--sub" id="children__input-btn--sub" name="children__input-btn--sub">
+              <span class="search-form__input-btn--sub-img" tabindex="0">
+              </span>
+            </button>
             <input id="search-form__children" type="number" name="children" min="0" value="0">
-            <svg class="search-form__input-btn search-form__input-btn--add" tabindex="0" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/></svg>
+            <button type="button" class="search-form__input-btn search-form__input-btn--add" id="children__input-btn--add" name="children__input-btn--add">
+              <svg class="search-form__input-btn--add-img" tabindex="0" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23 6.77V11h2.54V6.77H11V4.23H6.77V0H4.23v4.23H0v2.54h4.23z" fill="#A9A9A9"/>
+              </svg>
+            </button>
           </p>
           <button class="search-form__find" type="submit">Найти</button>
         </form>
