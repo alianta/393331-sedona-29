@@ -461,12 +461,17 @@ img {
 
 .search-form__calendar {
   position: absolute;
-  fill: var(--very-light-gray);
+  padding: 0;
+  border: 0;
   right: 9px;
   top: 8px;
   width: 21px;
   height: 23px;
   cursor: pointer;
+}
+
+.search-form__calendar-img {
+  fill: var(--very-light-gray);
 }
 
 .search-form__calendar:hover path,
