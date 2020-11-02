@@ -786,7 +786,7 @@ img {
 
 .search__toggle:hover,
 .search__toggle:focus {
-  border-width: 9px;
+  transform: scale(1.2);
 }
 
 .search__toggle--max {
