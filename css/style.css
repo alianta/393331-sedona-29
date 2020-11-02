@@ -526,7 +526,7 @@ img {
   width: 12px;
   height: 3px;
   right: 89px;
-  top: 19px;
+  top: 17px;
   background-color: var(--very-light-gray);
 }
 
@@ -545,7 +545,7 @@ img {
 
 .search-form__input-btn--add {
   right: 13px;
-  top: 13px;
+  top: 11px;
 }
 
 .search-form__input-btn--add path:hover,
