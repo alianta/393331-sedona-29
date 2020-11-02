@@ -129,6 +129,7 @@ img {
 
 .site-navigation__item:nth-child(4n+3) {
   margin-left: auto;
+  padding-left: 150px;
 }
 
 .site-navigation__link {
