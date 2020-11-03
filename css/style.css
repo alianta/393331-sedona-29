@@ -701,7 +701,7 @@ img {
 .search__price-controls {
   display: flex;
   justify-content: center;
-  min-width: 313px;
+  width: 312px;
   border: 2px solid var(--basic-white);
 }
 
@@ -731,8 +731,6 @@ img {
 
 .search__min-price,
 .search__max-price {
-  width: 100%;
-  text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
   line-height: 22px;
@@ -740,16 +738,20 @@ img {
 
 .search__min-price {
   border-right: 2px solid var(--basic-white);
+  margin-left: 65px;
+  margin-right: 10px;
+  width: 186px;
+}
+
+.search__max-price {
+  margin-left: 42px;
+  width: 206px;
 }
 
 .search__min-price input,
 .search__max-price input {
-  width: 8px;
+  width: 35px;
   padding: 0;
-}
-
-.search__max-price input {
-  width: 30px;
 }
 
 .search__scale {
