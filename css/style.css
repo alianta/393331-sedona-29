@@ -523,39 +523,40 @@ img {
   background-color: transparent;
 }
 
-.search-form__input-btn--sub {
-  content: "";
-  width: 12px;
-  height: 3px;
-  right: 89px;
-  top: 17px;
-  background-color: var(--very-light-gray);
-}
-
-.search-form__input-btn:active {
-  outline: none;
-}
-
-.search-form__input-btn--sub:hover,
-.search-form__input-btn--sub:focus {
-  background-color: var(--basic-black);
-}
-
-.search-form__input-btn--sub:active {
-  background-color: var(--basic-blue);
+.search-form__input-btn {
+  width: 38px;
+  height: 38px;
+  right: 76px;
 }
 
 .search-form__input-btn--add {
-  right: 13px;
-  top: 11px;
+  right: 0;
 }
 
-.search-form__input-btn--add path:hover,
-.search-form__input-btn--add path:focus {
+.search-form__input-btn--sub-img {
+  width: 12px;
+  height: 3px;
+  top: 17px;
+  display: block;
+  background-color: var(--very-light-gray);
+  margin: 0 auto;
+}
+
+.search-form__input-btn--sub:hover .search-form__input-btn--sub-img,
+.search-form__input-btn--sub:focus .search-form__input-btn--sub-img {
+  background-color: var(--basic-black);
+}
+
+.search-form__input-btn--sub:active .search-form__input-btn--sub-img {
+  background-color: var(--basic-blue);
+}
+
+.search-form__input-btn--add:hover .search-form__input-btn--add-svg-path,
+.search-form__input-btn--add:focus .search-form__input-btn--add-svg-path {
   fill: var(--basic-black);
 }
 
-.search-form__input-btn--add path:active {
+.search-form__input-btn--add:active .search-form__input-btn--add-svg-path {
   fill: var(--basic-blue);
 }
 
