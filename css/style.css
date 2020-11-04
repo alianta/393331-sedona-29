@@ -464,6 +464,7 @@ img {
   width: 21px;
   height: 23px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .search-form__calendar-img {
@@ -519,6 +520,7 @@ img {
   cursor: pointer;
   padding: 0;
   border: 0;
+  background-color: transparent;
 }
 
 .search-form__input-btn--sub {
